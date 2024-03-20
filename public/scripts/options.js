@@ -78,5 +78,5 @@ function loadLanguageConfiguration() {
     addButtonElement.textContent = chrome.i18n.getMessage("options_add_button")
 
     const saveButtonElement = document.getElementById("save")
-    saveButtonElement.textContent = chrome.i18n.getMessage("options_add_button")
+    saveButtonElement.textContent = chrome.i18n.getMessage("options_save_configuration")
 }
