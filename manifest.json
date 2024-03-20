@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_title__",
+  "description": "__MSG_description__",
+  "version": "1.0",
+  "default_locale": "en",
+  "action": {
+    "default_popup": "/public/index.html",
+    "default_icon": "icon.png"
+  },
+  "options_page": "/public/options.html",
+  "content_scripts": [
+    {
+      "js": [
+        "/public/scripts/checking_script.js"
+      ],
+      "matches": ["<all_urls>"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["storage", "tabs"]
+}

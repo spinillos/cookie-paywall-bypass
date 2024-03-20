@@ -1,0 +1,105 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    width: 300px; /* Ancho deseado del popup */
+    padding: 20px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9;
+}
+
+/* Estilos para el título */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Estilos para el texto de descripción */
+.text-style {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    white-space: pre-line;
+}
+
+/* Estilos para el enlace */
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.switch {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    top: 20px;
+    right: 20px;
+}
+
+.switch input {
+    visibility: hidden;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado */
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    margin-top: 20px; /* Espacio superior */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}

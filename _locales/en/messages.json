@@ -1,0 +1,32 @@
+{
+  "title": {
+    "message": "Auto-Reject Cookies"
+  },
+  "description": {
+    "message": "It allows you to browse newspapers without annoying ads or subscriptions."
+  },
+  "popup_description": {
+    "message": "It removes paywalls from newspapers that require you to pay to reject cookies.\n\nThis extension does not approve any cookies. Therefore, if you are still seeing personalized ads, the website probably does not handle cookie rejection well.\n\nThis extension is simply engaging in the same questionable practices as the newspapers.\n\nMore journalism and less clickbait!!!"
+  },
+  "popup_options_link": {
+    "message": "Customise allowed URLs for this plugin."
+  },
+  "options_title": {
+    "message": "Extension Options"
+  },
+  "options_description": {
+    "message": "Add websites to be excluded from the plugin. Protocols are not required.\n\nFor instance, instead of https://www.google.es, you can simply add www.google.es or google.es."
+  },
+  "options_add_button": {
+    "message": "Add URL"
+  },
+  "options_delete_button": {
+    "message": "Delete"
+  },
+  "options_save_configuration": {
+    "message": "Save configuration"
+  },
+  "options_save_configuration_message": {
+    "message": "Configuration saved!"
+  }
+}

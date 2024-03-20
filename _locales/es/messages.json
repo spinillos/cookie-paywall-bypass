@@ -1,0 +1,32 @@
+{
+  "title": {
+    "message": "Auto-rechazar Cookies"
+  },
+  "description": {
+    "message": "Te permite navegar por páginas sin tener que aceptar cookies o pager pos suscripciones."
+  },
+  "popup_description": {
+    "message": "Elimina los muros de pago que requieren pagar por rechazar las cookies.\n\nEsta extensión NO aprueba ninguna cookie. Si la página web sigue mostrando anuncios personalizados, es un problema de gestióon de esa página.\n\nEsta extensión juega al mismo juego sucio que hacerte pagar por rechazar cookies.\n\nMás periodismo y menos clickbait!"
+  },
+  "popup_options_link": {
+    "message": "Customiza las URLs permitidas para este plugin."
+  },
+  "options_title": {
+    "message": "Opciones de la extensión"
+  },
+  "options_description": {
+    "message": "Añade las webs que quieras excluir. No hace falta añadir el protocolo.\n\nPor ejemplo, en vez de https://www.google.es, puedes añadir www.google.es o google.es."
+  },
+  "options_add_button": {
+    "message": "Añadir URL"
+  },
+  "options_delete_button": {
+    "message": "Borrar"
+  },
+  "options_save_configuration": {
+    "message": "Guardar configuración"
+  },
+  "options_save_configuration_message": {
+    "message": "Configuración guardada!"
+  }
+}
