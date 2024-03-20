@@ -1,2 +1,2 @@
-# noads
-Google extension to remove paywalls that requiere pay to reject cookies
+# Cookie Paywall Skip
+Google extension to remove paywalls that require to pay to reject cookies
