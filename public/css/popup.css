@@ -103,3 +103,31 @@ a {
 a:hover {
     text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
 }
+
+.donation-button {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #5F7FFF;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donation-button:hover {
+    background-color: #445bd4;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee-emoji {
+    font-size: 24px; /* Ajusta el tamaño del emoji */
+    margin-right: 8px; /* Ajusta el espacio horizontal entre el emoji y el texto */
+}

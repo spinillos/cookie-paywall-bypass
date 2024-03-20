@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const linkElement = document.getElementById("options")
     linkElement.textContent = chrome.i18n.getMessage("popup_options_link")
+
+    document.getElementById("donationButton").addEventListener("click", function() {
+        window.open("https://www.buymeacoffee.com/selenepinillos", "_blank");
+    });
     
     chrome.storage.local.get('isEnabled', function(data) {
         if (data.isEnabled !== undefined) {
