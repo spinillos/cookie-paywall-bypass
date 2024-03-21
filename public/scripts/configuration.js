@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.storage.local.get('isEnabled', function(data) {
         if (data.isEnabled !== undefined) {
             document.getElementById('switch').checked = data.isEnabled;
+        } else {
+            document.getElementById('switch').checked = true
         }
     });
 

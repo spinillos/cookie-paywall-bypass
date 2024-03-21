@@ -68,6 +68,10 @@ function removePayWall() {
     if (document.body.style.getPropertyValue("overflow")) {
         document.body.style.removeProperty("overflow")
     }
+    
+    if (document.body.className === "bodyBlocked") {
+        document.body.classList.remove("bodyBlocked")
+    }
 
     let overlay = document.getElementById("nhfp_didomi_block_page")
     if (overlay) {
