@@ -27,11 +27,12 @@ const genericCheck = function () {
     // EuropaPress
     let needsClick = document.querySelector(".needsclick")
     if (needsClick) {
+        document.head.getElementsByTagName("style")[0].remove()
         needsClick.remove()
     }
-    document.head.getElementsByTagName("style")[0].remove()
 
     document.body.classList.remove("_y9ev9r")
+    document.body.classList.remove("sxnlzit")
     document.body.classList.remove("bodyBlocked")
 }
 
