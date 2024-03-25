@@ -31,6 +31,10 @@ const genericCheck = function () {
         needsClick.remove()
     }
 
+    if (document.body.style.getPropertyValue("overflow")) {
+        document.body.style.removeProperty("overflow")
+    }
+    
     document.body.classList.remove("_y9ev9r")
     document.body.classList.remove("sxnlzit")
     document.body.classList.remove("bodyBlocked")
@@ -40,10 +44,6 @@ const elPaisBypass = function () {
     let consentWall = document.getElementById("pmConsentWall")
     if (consentWall) {
         consentWall.remove()
-    }
-
-    if (document.body.style.getPropertyValue("overflow")) {
-        document.body.style.removeProperty("overflow")
     }
 
     const premium = document.querySelector("#ctn_freemium_article")
