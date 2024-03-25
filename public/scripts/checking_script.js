@@ -49,7 +49,7 @@ function removePayWall() {
     const websites = {
         "elpais.com": elPaisBypass,
         "elconfidencial.com": elConfidencialByPass,
-        undefined: genericCheck
+        "expansion.com": ampByPass,
     }
 
     setTimeout(genericCheck, 1000)
@@ -60,6 +60,6 @@ function removePayWall() {
 }
 
 function cleanURL(url) {
-    const domain = url.match(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:/\n?]+)/im)
+    const domain = url.match(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.|amp\.)?([^:/\n?]+)/im)
     return (domain && domain[1]) || ''
 }

@@ -79,3 +79,18 @@ const elPaisBypass = function () {
 const elConfidencialByPass = function () {
     document.querySelector("#news-body-cc").classList.remove("newsType__content--closed")
 }
+
+const ampByPass = function () {
+    const url = window.location.href
+    if (!url.includes('/amp.')) {
+        window.location.href = url.replace("www", "amp")
+    } else {
+        document.querySelector("#didomi").remove()
+        document.querySelector(".i-amphtml-consent-ui-mask").remove()
+        document.querySelector(".ue-c-premium-amp").remove()
+        document.querySelector(".advertising").remove()
+        document.getElementsByTagName("html")[0].classList.remove("i-amphtml-scroll-disabled")
+
+        document.querySelector('div[subscriptions-section="content"]').setAttribute("subscriptions-section", "content-not-granted")
+    }
+}
