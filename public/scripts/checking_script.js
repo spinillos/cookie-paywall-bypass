@@ -50,6 +50,7 @@ function removePayWall() {
         "elpais.com": elPaisBypass,
         "elconfidencial.com": elConfidencialByPass,
         "expansion.com": ampByPass,
+        "elmundo.es": ampByPass,
     }
 
     setTimeout(genericCheck, 1000)

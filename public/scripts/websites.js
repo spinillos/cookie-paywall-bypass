@@ -82,8 +82,11 @@ const elConfidencialByPass = function () {
 
 const ampByPass = function () {
     const url = window.location.href
+    const premium = document.querySelector(".ue-c-article__premium")
     if (!url.includes('/amp.')) {
-        window.location.href = url.replace("www", "amp")
+        if (premium) {
+            window.location.href = url.replace("www", "amp")
+        }
     } else {
         document.querySelector("#didomi").remove()
         document.querySelector(".i-amphtml-consent-ui-mask").remove()
