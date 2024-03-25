@@ -37,55 +37,25 @@ function waitCondition(ev) {
             console.log("NoAds disabled for this url")
             return
         }
-        
-        let interval = setInterval(checkInterval, 100)
-        function checkInterval() {
-            if (document.getElementById("didomi-host") || document.getElementById("pmConsentWall")) {
-                clearInterval(interval)
-                removePayWall()
-            }
-        }
+
+        removePayWall()
     })
     .catch(function (error) {
-        console.log("NoAds: Error retrieving urls" + error)
+        console.log("Cookie paywall skip: Error retrieving urls" + error)
     })
 }
 
 function removePayWall() {
-    let didomi = document.getElementById("didomi-host")
-    if (didomi) {
-        didomi.remove()
-        document.body.classList.remove("didomi-popup-open")
-    }
-    
-    // El país
-    let consentWall = document.getElementById("pmConsentWall")
-    if (consentWall) {
-        consentWall.remove()
-        
-    }
-    
-    if (document.body.style.getPropertyValue("overflow")) {
-        document.body.style.removeProperty("overflow")
-    }
-    
-    if (document.body.className === "bodyBlocked") {
-        document.body.classList.remove("bodyBlocked")
+    const websites = {
+        "elpais.com": elPaisBypass,
+        "elconfidencial.com": elConfidencialByPass,
+        undefined: genericCheck
     }
 
-    let overlay = document.getElementById("nhfp_didomi_block_page")
-    if (overlay) {
-        overlay.remove()
-    }
-    
-    let noSnippet = document.querySelector('div[data-nosnippet="data-nosnippet"]')
-    if (noSnippet) {
-        noSnippet.remove()
-    }
-
-    let mrfPopup = document.getElementById("mrf-popup")
-    if (mrfPopup) {
-        mrfPopup.remove()
+    setTimeout(genericCheck, 1000)
+    const pageFunction = websites[cleanURL(window.location.hostname)]
+    if (pageFunction !== undefined) {
+        pageFunction()
     }
 }
 

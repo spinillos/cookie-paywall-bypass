@@ -18,7 +18,8 @@
   "content_scripts": [
     {
       "js": [
-        "/public/scripts/checking_script.js"
+        "/public/scripts/checking_script.js",
+        "/public/scripts/websites.js"
       ],
       "matches": ["<all_urls>"],
       "run_at": "document_end"
