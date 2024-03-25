@@ -38,6 +38,19 @@ const genericCheck = function () {
     document.body.classList.remove("_y9ev9r")
     document.body.classList.remove("sxnlzit")
     document.body.classList.remove("bodyBlocked")
+    
+    // The Washington post
+    let wallBottomDrawer = document.querySelector("#wall-bottom-drawer")
+    if (wallBottomDrawer) {
+        document.getElementsByTagName("html")[0].style.removeProperty("overflow")
+        wallBottomDrawer.remove()
+    }
+    
+    const paywall = document.querySelector("#paywall-1176d186cb35")
+    if (paywall) {
+        document.body.style.removeProperty("position")
+        paywall.remove()
+    }
 }
 
 const elPaisBypass = function () {
