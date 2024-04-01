@@ -8,7 +8,7 @@ Que no os dé miedo a pedir cambios o aportar, que esto está para todos.
 
 ### Instalación
 * Descarga/clona el respositorio.
-* Desde Chrome, abre las [extensiones](chrome://extensions/).
+* Desde Chrome, abre la página de extensiones (`chrome://extensions/`).
 * Activa el modo desarrollador (arriba a la derecha)
 * Pulsa `Cargar descomprimida` y selecciona el directorio donde está el repositorio.
 * Podrás ver bajo el icono de extensiones en tu barra de navegación el plugin instalado.
@@ -34,7 +34,7 @@ Don't hesitate to request changes or contribute, as this is for everyone.
 
 ### Installation
 * Download/clone the repository.
-* In Chrome, open the [extensions](chrome://extensions/) page.
+* In Chrome, open the extension's page (`chrome://extensions/`).
 * Enable developer mode (top right corner).
 * Click on Load unpacked and select the directory where the repository is located.
 * You will see the installed plugin under the extensions icon in your navigation bar.
