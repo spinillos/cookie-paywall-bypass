@@ -41,7 +41,7 @@ function waitCondition(ev) {
         removePayWall()
     })
     .catch(function (error) {
-        console.log("Cookie paywall skip: Error retrieving urls" + error)
+        console.log("Cookie paywall bypass: Error retrieving urls" + error)
     })
 }
 
