@@ -51,6 +51,19 @@ const genericCheck = function () {
         document.body.style.removeProperty("position")
         paywall.remove()
     }
+    
+    // Hola
+    let spMesageContainer = document.querySelector("#sp_message_container_1093063")
+    if(spMesageContainer) {
+        document.getElementsByTagName("html")[0].classList.remove("sp-message-open")
+        spMesageContainer.remove()
+    }
+    
+    // Diario Palentino
+    let avisoCmpRechazado = document.querySelector("#AvisoCmpRechazado")
+    if (avisoCmpRechazado) {
+        avisoCmpRechazado.remove()
+    }
 }
 
 const elPaisBypass = function () {
